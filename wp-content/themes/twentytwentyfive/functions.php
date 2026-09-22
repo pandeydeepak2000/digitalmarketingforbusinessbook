@@ -61,10 +61,10 @@ if ( ! function_exists( 'twentytwentyfive_enqueue_styles' ) ) :
 			get_parent_theme_file_path( $src )
 		);
 
-		// Enqueue TopBlogTech Premium Custom Styling
+		// Enqueue Digital Marketing For Business Book Premium Custom Styling
 		wp_enqueue_style(
 			'topblogtech-premium-style',
-			get_parent_theme_file_uri( 'assets/css/topblogtech-premium.css' ),
+			get_parent_theme_file_uri( 'assets/css/dmb-premium.css' ),
 			array( 'twentytwentyfive-style' ),
 			time()
 		);
@@ -167,12 +167,12 @@ if ( ! function_exists( 'twentytwentyfive_format_binding' ) ) :
 endif;
 
 /**
- * TopBlogTech Automated SEO & Schema Engine
+ * Digital Marketing For Business Book Automated SEO & Schema Engine
  */
 function tbt_inject_seo_meta() {
 	$site_name = get_bloginfo( 'name' );
 	$site_desc = get_bloginfo( 'description' );
-	$logo_url  = home_url( '/wp-content/uploads/topblogtech-nav-logo.png' );
+	$logo_url  = home_url( '/wp-content/uploads/dmb-nav-logo.jpg' );
 
 	echo "\n<!-- Google Search Console Verification -->\n";
 	echo '<meta name="google-site-verification" content="hqGQLKOd7hV2OFJhYRwpBaDiI2hc_aXdP3DdLmOjMrg" />' . "\n";
@@ -187,7 +187,7 @@ function tbt_inject_seo_meta() {
 		$published_time = get_the_date( 'c' );
 		$modified_time  = get_the_modified_date( 'c' );
 
-		echo "\n<!-- TopBlogTech SEO Engine -->\n";
+		echo "\n<!-- Digital Marketing For Business Book SEO Engine -->\n";
 		echo '<meta name="description" content="' . esc_attr( $excerpt ) . '" />' . "\n";
 		echo '<link rel="canonical" href="' . esc_url( $canonical ) . '" />' . "\n";
 		echo '<meta property="og:type" content="article" />' . "\n";
@@ -230,7 +230,7 @@ function tbt_inject_seo_meta() {
 		echo '<script type="application/ld+json">' . json_encode( $schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT ) . '</script>' . "\n";
 	} else {
 		$canonical = home_url( '/' );
-		echo "\n<!-- TopBlogTech SEO Engine -->\n";
+		echo "\n<!-- Digital Marketing For Business Book SEO Engine -->\n";
 		echo '<meta name="description" content="' . esc_attr( $site_desc . ' - High-authority blueprints on tech blogging, video algorithms, AdSense optimization, and modern digital wealth.' ) . '" />' . "\n";
 		echo '<link rel="canonical" href="' . esc_url( $canonical ) . '" />' . "\n";
 		echo '<meta property="og:type" content="website" />' . "\n";
@@ -258,7 +258,7 @@ function tbt_inject_seo_meta() {
 add_action( 'wp_head', 'tbt_inject_seo_meta', 1 );
 
 /**
- * TopBlogTech Enterprise Security Hardening
+ * Digital Marketing For Business Book Enterprise Security Hardening
  */
 // 1. Disable XML-RPC completely (Blocks 95% of automated brute-force attacks)
 add_filter( 'xmlrpc_enabled', '__return_false' );
@@ -286,8 +286,8 @@ add_filter( 'style_loader_src', 'tbt_remove_ver_css_js', 9999 );
 add_filter( 'script_loader_src', 'tbt_remove_ver_css_js', 9999 );
 
 /**
- * TopBlogTech Google Analytics (GA4) Tracking Script
- * Stream: topblog (https://topblogtech.com)
+ * Digital Marketing For Business Book Google Analytics (GA4) Tracking Script
+ * Stream: topblog (https://digitalmarketingforbusinessbook.com)
  * Measurement ID: G-SNDLMK8H9E
  */
 function tbt_inject_google_analytics() {

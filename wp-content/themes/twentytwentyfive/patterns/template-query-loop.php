@@ -4,24 +4,31 @@
  * Slug: twentytwentyfive/template-query-loop
  * Categories: query
  * Block Types: core/query
- * Description: A list of posts in modern grid layout
+ * Description: A list of posts in modern 3-column card grid
  */
 ?>
 <!-- wp:query {"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"align":"full","layout":{"type":"default"}} -->
-<div class="wp-block-query alignfull dmb-query-container">
+<div class="wp-block-query alignfull">
 	<!-- wp:post-template {"align":"full","layout":{"type":"default"}} -->
-		<!-- wp:group {"className":"dmb-card-inner","layout":{"type":"default"}} -->
-		<div class="wp-block-group dmb-card-inner">
+		<!-- wp:group {"className":"tbt-card-body","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group tbt-card-body">
 			<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9"} /-->
-			<div class="dmb-card-content">
-				<!-- wp:post-terms {"term":"category","className":"dmb-post-category"} /-->
-				<!-- wp:post-title {"isLink":true,"fontSize":"large"} /-->
-				<!-- wp:post-excerpt {"moreText":"Read Executive Playbook →"} /-->
-				<!-- wp:post-date {"isLink":true,"fontSize":"small"} /-->
-			</div>
+			<!-- wp:post-terms {"term":"category","className":"tbt-post-category"} /-->
+			<!-- wp:post-title {"isLink":true,"fontSize":"large"} /-->
+			<!-- wp:post-excerpt {"moreText":"Read Executive Playbook →"} /-->
+			<!-- wp:post-date {"isLink":true,"fontSize":"small"} /-->
 		</div>
 		<!-- /wp:group -->
 	<!-- /wp:post-template -->
+	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+		<!-- wp:query-no-results -->
+		<!-- wp:paragraph -->
+		<p>No playbooks found.</p>
+		<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:group -->
 	<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:query-pagination {"paginationArrow":"arrow","align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->

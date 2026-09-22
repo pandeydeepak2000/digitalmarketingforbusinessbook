@@ -305,3 +305,8 @@ function tbt_inject_google_analytics() {
 }
 add_action( 'wp_head', 'tbt_inject_google_analytics', 2 );
 
+
+function dmb_enqueue_assets() {
+    wp_enqueue_style( 'dmb-premium-styles', get_template_directory_uri() . '/assets/css/dmb-premium.css', array(), time() );
+}
+add_action( 'wp_enqueue_scripts', 'dmb_enqueue_assets', 99 );

@@ -14,125 +14,119 @@
 }
 
 body {
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
-    background-color: var(--dmb-bg) !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    background-color: #f8fafc !important;
     color: var(--dmb-text) !important;
-    margin: 0;
-    padding: 0;
-    line-height: 1.7;
 }
 
-.dmb-gradient-text {
+.dmb-text-gradient {
     background: var(--dmb-grad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* ==========================================================================
-   Header
-   ========================================================================== */
+/* Header */
 .dmb-header {
     background: #ffffff !important;
-    border-bottom: 1px solid var(--dmb-border);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+    border-bottom: 1px solid #f1f5f9 !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) !important;
 }
 .dmb-header-inner {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0.85rem 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0.85rem 1.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
 }
 .dmb-brand .dmb-logo-link {
-    display: flex;
-    align-items: center;
-    gap: 0.85rem;
-    text-decoration: none;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.85rem !important;
+    text-decoration: none !important;
 }
 .dmb-logo-img {
-    width: 44px;
-    height: 44px;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 2px 8px rgba(2, 132, 199, 0.2);
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 12px !important;
+    object-fit: cover !important;
+    box-shadow: 0 2px 8px rgba(2, 132, 199, 0.25) !important;
 }
 .dmb-brand-title {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.35rem;
-    font-weight: 800;
-    color: var(--dmb-navy);
-    display: block;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 1.35rem !important;
+    font-weight: 900 !important;
+    color: var(--dmb-navy) !important;
+    display: block !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.02em !important;
 }
 .dmb-brand-sub {
-    font-size: 0.65rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
-    color: var(--dmb-blue);
-    display: block;
+    font-size: 0.65rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.12em !important;
+    color: var(--dmb-blue) !important;
+    display: block !important;
 }
 .dmb-nav-list {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex !important;
+    gap: 1.5rem !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 .dmb-nav-item {
-    text-decoration: none;
-    color: #475569;
-    font-weight: 600;
-    font-size: 0.95rem;
-    padding: 0.5rem 0.75rem;
-    border-radius: 8px;
-    transition: all 0.2s ease;
+    text-decoration: none !important;
+    color: #475569 !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    padding: 0.5rem 0.75rem !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease !important;
 }
 .dmb-nav-item:hover, .dmb-nav-item.active {
-    color: var(--dmb-blue);
-    background: #f0f9ff;
+    color: var(--dmb-blue) !important;
+    background: #f0f9ff !important;
 }
 .dmb-btn-cta {
-    background: var(--dmb-grad);
+    background: var(--dmb-grad) !important;
     color: #ffffff !important;
-    font-weight: 700;
-    font-size: 0.9rem;
-    padding: 0.65rem 1.35rem;
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    padding: 0.65rem 1.35rem !important;
+    border-radius: 9999px !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 .dmb-btn-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.45);
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.45) !important;
 }
 .dmb-mobile-toggle {
-    display: none;
+    display: none !important;
 }
 
-/* ==========================================================================
-   Hero Section
-   ========================================================================== */
-.dmb-hero-wrap {
+/* Hero Section */
+.dmb-hero-section {
+    position: relative !important;
+    padding: 4rem 1.5rem 3rem !important;
     background: linear-gradient(180deg, #ffffff 0%, #f0f9ff 100%) !important;
     border-bottom: 1px solid #bae6fd !important;
-    padding: 4.5rem 1.5rem 3.5rem !important;
     text-align: center !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
+    overflow: hidden !important;
 }
-.dmb-hero-box {
-    max-width: 900px !important;
+.dmb-hero-content {
+    max-width: 920px !important;
     margin: 0 auto !important;
-    text-align: center !important;
+    position: relative !important;
+    z-index: 2 !important;
 }
 .dmb-hero-badge {
     display: inline-flex !important;
@@ -143,61 +137,55 @@ body {
     font-size: 0.8rem !important;
     font-weight: 800 !important;
     letter-spacing: 0.1em !important;
-    padding: 0.45rem 1.25rem !important;
+    padding: 0.4rem 1.1rem !important;
     border-radius: 9999px !important;
-    margin: 0 auto 1.5rem !important;
+    margin-bottom: 1.25rem !important;
     border: 1px solid #bae6fd !important;
-    text-transform: uppercase !important;
 }
 .dmb-hero-title {
     font-family: 'Outfit', sans-serif !important;
-    font-size: clamp(2.2rem, 5vw, 3.5rem) !important;
+    font-size: clamp(2.1rem, 4.5vw, 3.4rem) !important;
     font-weight: 900 !important;
-    color: #0f172a !important;
+    color: var(--dmb-text) !important;
     line-height: 1.15 !important;
     letter-spacing: -0.03em !important;
-    margin: 0 auto 1.25rem !important;
-    text-align: center !important;
+    margin-bottom: 1.1rem !important;
 }
 .dmb-hero-subtitle {
-    font-size: 1.2rem !important;
+    font-size: 1.15rem !important;
     color: #475569 !important;
-    line-height: 1.7 !important;
+    line-height: 1.65 !important;
     max-width: 780px !important;
-    margin: 0 auto 2rem !important;
-    text-align: center !important;
+    margin: 0 auto 1.8rem !important;
 }
 .dmb-hero-tags {
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
-    gap: 0.65rem !important;
-    margin: 0 auto !important;
+    gap: 0.6rem !important;
 }
 .dmb-pill {
     background: #ffffff !important;
     color: #0369a1 !important;
     font-size: 0.85rem !important;
     font-weight: 700 !important;
-    padding: 0.45rem 1rem !important;
+    padding: 0.4rem 0.9rem !important;
     border-radius: 8px !important;
     text-decoration: none !important;
     transition: all 0.2s ease !important;
     border: 1px solid #bae6fd !important;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.03) !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02) !important;
 }
 .dmb-pill:hover {
     background: var(--dmb-grad) !important;
     color: #ffffff !important;
     border-color: transparent !important;
-    transform: translateY(-2px) !important;
+    transform: translateY(-1px) !important;
 }
 
-/* ==========================================================================
-   Section Heading
-   ========================================================================== */
+/* Section Header */
 .dmb-section-header {
-    max-width: 1240px !important;
+    max-width: 1200px !important;
     margin: 3.5rem auto 1.5rem !important;
     padding: 0 1.5rem !important;
 }
@@ -208,13 +196,13 @@ body {
 }
 .dmb-section-bar {
     width: 5px !important;
-    height: 32px !important;
+    height: 30px !important;
     background: var(--dmb-grad) !important;
     border-radius: 4px !important;
 }
 .dmb-section-title {
     font-family: 'Outfit', sans-serif !important;
-    font-size: 1.75rem !important;
+    font-size: 1.6rem !important;
     font-weight: 800 !important;
     color: var(--dmb-text) !important;
     margin: 0 !important;
@@ -222,72 +210,70 @@ body {
 .dmb-badge-count {
     background: #e0f2fe !important;
     color: #0369a1 !important;
-    font-size: 0.85rem !important;
+    font-size: 0.8rem !important;
     font-weight: 800 !important;
-    padding: 0.3rem 0.85rem !important;
+    padding: 0.25rem 0.75rem !important;
     border-radius: 9999px !important;
     margin-left: auto !important;
 }
 
-/* ==========================================================================
-   Post Card Grid Layout
-   ========================================================================== */
+/* Post Cards Grid (EXACT SAME AS SKYE & INSTAGRAMVK) */
 .wp-block-post-template {
     display: grid !important;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)) !important;
-    gap: 2.25rem !important;
-    max-width: 1240px !important;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)) !important;
+    gap: 2rem !important;
+    max-width: 1200px !important;
     margin: 0 auto !important;
     padding: 1rem 1.5rem 4rem !important;
-    box-sizing: border-box !important;
+    list-style: none !important;
 }
 .wp-block-post {
     background: #ffffff !important;
     border-radius: 16px !important;
     overflow: hidden !important;
-    border: 1px solid var(--dmb-border) !important;
-    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06) !important;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease !important;
     display: flex !important;
     flex-direction: column !important;
+    margin: 0 !important;
 }
 .wp-block-post:hover {
-    transform: translateY(-6px) !important;
-    box-shadow: 0 16px 36px -4px rgba(2, 132, 199, 0.15) !important;
-    border-color: #7dd3fc !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 30px -4px rgba(2, 132, 199, 0.15) !important;
+    border-color: #bae6fd !important;
 }
 .wp-block-post-featured-image {
     margin: 0 !important;
-    overflow: hidden !important;
-    background: #0f172a !important;
 }
 .wp-block-post-featured-image img {
     width: 100% !important;
     height: 220px !important;
     object-fit: cover !important;
+    transition: transform 0.3s ease !important;
     display: block !important;
-    transition: transform 0.35s ease !important;
 }
 .wp-block-post:hover .wp-block-post-featured-image img {
-    transform: scale(1.04) !important;
+    transform: scale(1.03) !important;
 }
-.dmb-card-inner, .wp-block-post .wp-block-group {
+.wp-block-post .tbt-card-body,
+.wp-block-post .wp-block-group {
     padding: 1.5rem !important;
     display: flex !important;
     flex-direction: column !important;
     flex: 1 !important;
 }
-.dmb-post-category, .wp-block-post-terms {
+.tbt-post-category, .wp-block-post-terms {
     margin-bottom: 0.5rem !important;
 }
-.dmb-post-category a, .wp-block-post-terms a {
+.tbt-post-category a, .wp-block-post-terms a {
     display: inline-block !important;
     background: #e0f2fe !important;
     color: #0369a1 !important;
     font-size: 0.75rem !important;
-    font-weight: 800 !important;
+    font-weight: 700 !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.06em !important;
+    letter-spacing: 0.05em !important;
     padding: 0.25rem 0.65rem !important;
     border-radius: 6px !important;
     text-decoration: none !important;
@@ -300,7 +286,7 @@ body {
     margin: 0.5rem 0 0.85rem !important;
 }
 .wp-block-post-title a {
-    color: #0f172a !important;
+    color: var(--dmb-text) !important;
     text-decoration: none !important;
     transition: color 0.2s ease !important;
 }
@@ -310,16 +296,13 @@ body {
 .wp-block-post-excerpt {
     color: var(--dmb-muted) !important;
     font-size: 0.95rem !important;
-    line-height: 1.65 !important;
+    line-height: 1.6 !important;
     margin-bottom: 1.25rem !important;
 }
 .wp-block-post-excerpt__more-link {
     color: var(--dmb-blue) !important;
     font-weight: 700 !important;
     text-decoration: none !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 0.35rem !important;
 }
 .wp-block-post-date {
     color: #94a3b8 !important;
@@ -331,18 +314,16 @@ body {
     text-decoration: none !important;
 }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
+/* Footer */
 .dmb-footer {
     background: #0f172a !important;
     color: #94a3b8 !important;
-    padding: 4.5rem 1.5rem 2.5rem !important;
-    margin-top: 5rem !important;
-    border-top: 4px solid var(--dmb-blue) !important;
+    padding: 4rem 1.5rem 2rem !important;
+    margin-top: 4rem !important;
+    border-top: 3px solid var(--dmb-blue) !important;
 }
 .dmb-footer-inner {
-    max-width: 1240px !important;
+    max-width: 1200px !important;
     margin: 0 auto !important;
 }
 .dmb-footer-grid {
@@ -365,6 +346,7 @@ body {
     font-size: 1rem !important;
     font-weight: 800 !important;
     margin-bottom: 1.25rem !important;
+    letter-spacing: -0.01em !important;
 }
 .dmb-footer-links {
     list-style: none !important;
@@ -387,6 +369,7 @@ body {
     font-size: 0.85rem !important;
     line-height: 1.55 !important;
     margin-bottom: 1rem !important;
+    color: #94a3b8 !important;
 }
 .dmb-newsletter-form {
     display: flex !important;
@@ -414,6 +397,10 @@ body {
     font-weight: 700 !important;
     font-size: 0.9rem !important;
     cursor: pointer !important;
+    transition: opacity 0.2s ease !important;
+}
+.dmb-newsletter-btn:hover {
+    opacity: 0.92 !important;
 }
 .dmb-ssl-badge {
     display: block !important;

@@ -8,18 +8,17 @@
 $home_url = home_url( '/' );
 ?>
 <!-- wp:html -->
-<section class="dmb-hero-section">
-	<div class="dmb-hero-glow"></div>
-	<div class="dmb-hero-content">
+<section class="dmb-hero-wrap">
+	<div class="dmb-hero-box">
 		<div class="dmb-hero-badge">
 			<span class="dmb-badge-icon">📈</span>
 			<span>SCALE • ACQUIRE • DOMINATE</span>
 		</div>
 		<h1 class="dmb-hero-title">
-			The Modern Playbook for <span class="dmb-text-gradient">B2B Marketing &amp; Revenue Growth</span>
+			The Modern Playbook for <span class="dmb-gradient-text">B2B Marketing &amp; Revenue Growth</span>
 		</h1>
 		<p class="dmb-hero-subtitle">
-			Data-backed strategies, account-based funnels, high-ticket client acquisition systems, and executive scaling playbooks for modern founders, CMOs, and revenue leaders.
+			Data-backed frameworks, account-based funnels, high-ticket client acquisition systems, and executive scaling playbooks for modern founders, CMOs, and revenue leaders.
 		</p>
 		<div class="dmb-hero-tags">
 			<a href="<?php echo esc_url( $home_url . 'category/b2b-marketing/' ); ?>" class="dmb-pill">#B2BMarketing</a>
@@ -27,7 +26,6 @@ $home_url = home_url( '/' );
 			<a href="<?php echo esc_url( $home_url . 'category/sales-funnels/' ); ?>" class="dmb-pill">#SalesFunnels</a>
 			<a href="<?php echo esc_url( $home_url . 'category/growth-strategy/' ); ?>" class="dmb-pill">#GrowthHacking</a>
 			<a href="<?php echo esc_url( $home_url . 'category/conversion-optimization/' ); ?>" class="dmb-pill">#ConversionRate</a>
-			<a href="<?php echo esc_url( $home_url . 'category/b2b-marketing/' ); ?>" class="dmb-pill">#EnterpriseSales</a>
 		</div>
 	</div>
 </section>

@@ -2,45 +2,41 @@
 /**
  * Title: Hidden blog heading
  * Slug: twentytwentyfive/hidden-blog-heading
- * Description: Hero banner for TopBlogTech - Cool Light Tech Edition.
+ * Description: Executive Hero for Digital Marketing For Business Book
  * Inserter: no
- *
- * @package WordPress
- * @subpackage Twenty_Twenty_Five
- * @since Twenty Twenty-Five 1.0
  */
-
 $home_url = home_url( '/' );
 ?>
 <!-- wp:html -->
-<section class="tbt-hero-cool">
-	<div class="tbt-hero-glow"></div>
-	<div class="tbt-hero-content">
-		<div class="tbt-hero-badge">
-			<span class="tbt-badge-icon">⚡</span>
-			<span>LEARN • GROW • EARN</span>
+<section class="dmb-hero-section">
+	<div class="dmb-hero-glow"></div>
+	<div class="dmb-hero-content">
+		<div class="dmb-hero-badge">
+			<span class="dmb-badge-icon">📈</span>
+			<span>SCALE • ACQUIRE • DOMINATE</span>
 		</div>
-		<h1 class="tbt-hero-title">
-			Master Tech, Blogging &amp; <span class="tbt-text-gradient">Modern Digital Wealth</span>
+		<h1 class="dmb-hero-title">
+			The Modern Playbook for <span class="dmb-text-gradient">B2B Marketing &amp; Revenue Growth</span>
 		</h1>
-		<p class="tbt-hero-subtitle">
-			High-authority SEO blueprints, YouTube algorithms, Google AdSense optimization, and realistic online income strategies for modern creators and entrepreneurs.
+		<p class="dmb-hero-subtitle">
+			Data-backed strategies, account-based funnels, high-ticket client acquisition systems, and executive scaling playbooks for modern founders, CMOs, and revenue leaders.
 		</p>
-		<div class="tbt-hero-tags">
-			<a href="<?php echo esc_url( $home_url . 'category/blogging/' ); ?>" class="tbt-pill">#Blogging 2024</a>
-			<a href="<?php echo esc_url( $home_url . 'category/online-money/' ); ?>" class="tbt-pill">#MakeMoneyOnline</a>
-			<a href="<?php echo esc_url( $home_url . 'category/youtube-growth/' ); ?>" class="tbt-pill">#YouTubeGrowth</a>
-			<a href="<?php echo esc_url( $home_url . 'category/google-adsense/' ); ?>" class="tbt-pill">#AdSenseMastery</a>
-			<a href="<?php echo esc_url( $home_url . 'category/passive-income/' ); ?>" class="tbt-pill">#PassiveIncome</a>
+		<div class="dmb-hero-tags">
+			<a href="<?php echo esc_url( $home_url . 'category/b2b-marketing/' ); ?>" class="dmb-pill">#B2BMarketing</a>
+			<a href="<?php echo esc_url( $home_url . 'category/lead-generation/' ); ?>" class="dmb-pill">#LeadGeneration</a>
+			<a href="<?php echo esc_url( $home_url . 'category/sales-funnels/' ); ?>" class="dmb-pill">#SalesFunnels</a>
+			<a href="<?php echo esc_url( $home_url . 'category/growth-strategy/' ); ?>" class="dmb-pill">#GrowthHacking</a>
+			<a href="<?php echo esc_url( $home_url . 'category/conversion-optimization/' ); ?>" class="dmb-pill">#ConversionRate</a>
+			<a href="<?php echo esc_url( $home_url . 'category/b2b-marketing/' ); ?>" class="dmb-pill">#EnterpriseSales</a>
 		</div>
 	</div>
 </section>
 
-<div class="tbt-section-header">
-	<div class="tbt-section-title-wrap">
-		<span class="tbt-section-bar"></span>
-		<h2 class="tbt-section-title">Latest Strategic Guides</h2>
-		<span class="tbt-badge-count"><?php echo (int) wp_count_posts()->publish; ?> Guides</span>
+<div class="dmb-section-header">
+	<div class="dmb-section-title-wrap">
+		<span class="dmb-section-bar"></span>
+		<h2 class="dmb-section-title">Featured Playbooks &amp; Strategic Guides</h2>
+		<span class="dmb-badge-count"><?php echo (int) wp_count_posts()->publish; ?> Playbooks</span>
 	</div>
 </div>
 <!-- /wp:html -->

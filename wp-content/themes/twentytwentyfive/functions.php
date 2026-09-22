@@ -282,7 +282,7 @@ function tbt_remove_ver_css_js( $src ) {
 	}
 	return $src;
 }
-add_filter( 'style_loader_src', 'tbt_remove_ver_css_js', 9999 );
+// add_filter( 'style_loader_src', 'tbt_remove_ver_css_js', 9999 );
 add_filter( 'script_loader_src', 'tbt_remove_ver_css_js', 9999 );
 
 /**
@@ -306,7 +306,14 @@ function tbt_inject_google_analytics() {
 add_action( 'wp_head', 'tbt_inject_google_analytics', 2 );
 
 
-function dmb_enqueue_assets() {
-    wp_enqueue_style( 'dmb-premium-styles', get_template_directory_uri() . '/assets/css/dmb-premium.css', array(), time() );
+
+
+function dmb_inject_custom_styles() {
+    $css_file = get_template_directory() . '/assets/css/dmb-premium.css';
+    if ( file_exists( $css_file ) ) {
+        $css_content = file_get_contents( $css_file );
+        echo "\n<!-- DMB Premium Custom Injected Styles (Cache-Bust Guaranteed) -->\n";
+        echo "<style id=\"dmb-critical-styles\">\n" . $css_content . "\n</style>\n";
+    }
 }
-add_action( 'wp_enqueue_scripts', 'dmb_enqueue_assets', 99 );
+add_action( 'wp_head', 'dmb_inject_custom_styles', 999 );

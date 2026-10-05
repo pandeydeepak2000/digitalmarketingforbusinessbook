@@ -16,22 +16,22 @@ $logo_url = home_url( '/wp-content/uploads/dmb-nav-logo.jpg' );
 			<div class="dmb-footer-logo-row">
 				<img src="<?php echo esc_url( $logo_url ); ?>" alt="Digital Marketing For Business" class="dmb-footer-logo" />
 				<div>
-					<span class="dmb-footer-brand-title">Digital Marketing For Business</span>
-					<span class="dmb-footer-tagline">Scaling Modern Business Revenue</span>
+					<span class="dmb-footer-brand-title">Digital Marketing</span>
+					<span class="dmb-footer-tagline">FOR BUSINESS &bull; GROWTH BLUEPRINTS</span>
 				</div>
 			</div>
 			<p class="dmb-footer-desc">The definitive knowledge portal and strategic growth blueprint for CEOs, CMOs, B2B founders, and marketing directors building high-converting customer acquisition systems.</p>
 			<div class="dmb-social-pills">
-				<span class="dmb-pill">🎯 B2B Acquisition</span>
-				<span class="dmb-pill">📊 High ROAS</span>
-				<span class="dmb-pill">⚡ Inbound Pipeline</span>
+				<span class="dmb-pill">&#127919; B2B Acquisition</span>
+				<span class="dmb-pill">&#128202; High ROAS</span>
+				<span class="dmb-pill">&#9889; Inbound Pipeline</span>
 			</div>
 		</div>
 
 		<div class="dmb-footer-links-col">
 			<h4 class="dmb-footer-heading">Strategic Pillars</h4>
 			<ul class="dmb-footer-list">
-				<li><a href="<?php echo esc_url( $home_url . 'category/b2b-marketing/' ); ?>">B2B Strategy & ABM</a></li>
+				<li><a href="<?php echo esc_url( $home_url . 'category/b2b-marketing/' ); ?>">B2B Strategy &amp; ABM</a></li>
 				<li><a href="<?php echo esc_url( $home_url . 'category/sales-funnels/' ); ?>">High-Converting Funnels</a></li>
 				<li><a href="<?php echo esc_url( $home_url . 'category/lead-generation/' ); ?>">Executive Lead Gen</a></li>
 				<li><a href="<?php echo esc_url( $home_url . 'category/conversion-optimization/' ); ?>">Conversion Rate (CRO)</a></li>
@@ -40,10 +40,10 @@ $logo_url = home_url( '/wp-content/uploads/dmb-nav-logo.jpg' );
 		</div>
 
 		<div class="dmb-footer-links-col">
-			<h4 class="dmb-footer-heading">Company & Legal</h4>
+			<h4 class="dmb-footer-heading">Company &amp; Legal</h4>
 			<ul class="dmb-footer-list">
 				<li><a href="<?php echo esc_url( $home_url . 'about-us/' ); ?>">About the Publication</a></li>
-				<li><a href="<?php echo esc_url( $home_url . 'contact-us/' ); ?>">Contact & Inquiries</a></li>
+				<li><a href="<?php echo esc_url( $home_url . 'contact-us/' ); ?>">Contact &amp; Inquiries</a></li>
 				<li><a href="<?php echo esc_url( $home_url . 'privacy-policy/' ); ?>">Privacy Policy (GDPR)</a></li>
 				<li><a href="<?php echo esc_url( $home_url . 'terms-of-service/' ); ?>">Terms of Service</a></li>
 				<li><a href="<?php echo esc_url( $home_url . 'disclaimer/' ); ?>">Editorial Disclaimer</a></li>
@@ -57,17 +57,17 @@ $logo_url = home_url( '/wp-content/uploads/dmb-nav-logo.jpg' );
 				<input type="email" placeholder="Enter corporate email..." class="dmb-input" readonly value="executive@enterprise.com" />
 				<button type="button" class="dmb-btn-sub">Subscribe</button>
 			</div>
-			<span class="dmb-sub-note">🔒 Zero spam. Strictly strategic marketing intelligence.</span>
+			<span class="dmb-sub-note">&#128274; Zero spam. Strictly strategic marketing intelligence.</span>
 		</div>
 	</div>
 
 	<div class="dmb-footer-bottom">
 		<div class="dmb-footer-bottom-inner">
-			<p class="dmb-copyright">© <?php echo date( 'Y' ); ?> Digital Marketing For Business Book. All Rights Reserved.</p>
+			<p class="dmb-copyright">&copy; <?php echo date( 'Y' ); ?> Digital Marketing For Business Book. All Rights Reserved.</p>
 			<div class="dmb-bottom-badges">
-				<span>🔒 256-Bit SSL Encrypted</span>
-				<span>⚡ Verified Enterprise SEO</span>
-				<span>📈 High-Intent Inbound</span>
+				<span>&#128274; 256-Bit SSL Encrypted</span>
+				<span>&#9889; Verified Enterprise SEO</span>
+				<span>&#128200; High-Intent Inbound</span>
 			</div>
 		</div>
 	</div>
